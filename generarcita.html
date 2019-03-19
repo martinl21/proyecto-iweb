@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        aRDog | Generar Cita    </title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png">
+
+    <!--Script Dropdown--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                constrainWidth: false
+            });
+        });
+
+    </script>
+
+
+
+    <div class="navbar-fixed z-depth-3">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html" class="brand-logo">
+                        <img class="responsive-img" src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="55px" height="200px">
+                    </a>
+
+                    <a href="" data-target="menu-responsive" class="sidenav-trigger ">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html">Catálogo</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">FAQ</a>
+                        </li>
+                                                <li class="tooltipped" data-position="bottom" data-tooltip="Aqui podras ver el estado de la cita con tu nuevo amigo, además podras modificar algunos datos personales">
+                            <a href="https://ardogs.herokuapp.com/PanelController">
+                                <i class="material-icons left ">pets </i> ¡Bienvenido,
+                                Juan Roberto!
+                                <!-- <i class="material-icons center">arrow_drop_down</i>-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ardogs.herokuapp.com/LoginController/logout" class="grey darken-4 white-text">
+                                Cerrar sesión
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!--Script para el sidenav(menu responsivo)--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+    </script>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="https://ardogs.herokuapp.com/LoginController" ALIGN="center" class="grey darken-4 white-text">
+                Inicia sesión
+                <i class="material-icons left">person</i>
+            </a></li>
+        <li class="divider"></li>
+        <li><a href="https://ardogs.herokuapp.com/RegistroController" class="grey darken-4 white-text">
+                ¡Registrate!
+                <i class="material-icons left">library_books</i>
+            </a></li>
+    </ul>
+
+    <ul class="sidenav blue-grey lighten-5" id="menu-responsive">
+
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://image.ibb.co/eLwhpp/portada.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="https://image.ibb.co/dRiGep/Male_User_96px.png"></a>
+
+                                <a href="https://ardogs.herokuapp.com/PanelController">
+                    <span class="white-text name">
+                        ¡Bienvenido,
+                        Juan Roberto!
+                    </span>
+                </a>
+                    <span class="white-text email">
+                        juanzr_cupe_rojas@hotmail.com                    </span>
+                
+            </div>
+        </li>
+
+
+       <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html"><i class="material-icons">panorama_vertical</i>Inicio</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html"><i class="material-icons">pets</i>Catálogo</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html"><i class="material-icons">contact_mail</i>Nosotros</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html"><i class="material-icons">contact_mail</i>Contacto</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">question_answer</i>FAQ</a>
+        </li>
+
+                <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">
+                Informacion personal
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ardogs.herokuapp.com/PanelController">
+                <i class="material-icons">assignment_ind</i>
+                Panel de Control
+            </a>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li>
+            <a class="subheader">
+                Salir
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ardogs.herokuapp.com/LoginController/logout">
+                <i class="material-icons">exit_to_app</i>
+                Cerrar Sesión
+            </a>
+        </li>
+
+        
+
+
+
+    </ul>
+
+    <ul id="dropdown_2" class="dropdown-content">
+        <li>
+            <a href="https://ardogs.herokuapp.com/LoginController">Iniciar sesión</a>
+        </li>
+    </ul>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems);
+        });
+
+    </script>
+
+</head>
+
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+
+</script>
+
+<script>
+    var w =  new Date();
+    var hour = w.getHours+":"+w.getMinutes;
+    
+</script>
+
+<script>
+    function checar_1(e_1) {
+        tecla = (document.all) ? e_1.keyCode : e_1.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla == 8) {
+            return false;
+        }
+        // Patron de entrada, en este caso solo acepta numeros y letras
+        patron = /[0-9-]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+</script>
+
+<div class="parallax-container">
+    <div class="parallax slider">
+        <img data-philter-vintage="1" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-732186.jpg">
+        <ul class="slides"></ul>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+<h3 ALIGN="center"> Este paso es importante...</h3>
+
+
+
+
+<div class="container">
+    <p ALIGN="center"> Ahora solo estamos a un paso de generar una cita. <br> A continuación
+        encontraras la informacion general de tu posible nuevo amigo, asi como un formulario en el que deberas
+        seleccionar la fecha y la hora en la que estes seguro que puedas estar presente.</p>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col s12 m6">
+
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col s12 m6">
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/sKvUT8hPeEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                        <p ALIGN="justify">
+                            <FONT SIZE=5>Nombre: </FONT>
+                            <FONT SIZE="4" color="#616161"> Tyzon</FONT><br>
+                            <FONT SIZE=5>Raza: </FONT>
+                            <FONT SIZE="3" color="#616161"> Pug</FONT><br>
+                            <FONT SIZE=5>Edad: </FONT>
+                            <FONT SIZE="3" color="#616161"> 2 años</FONT><br>
+                            <FONT SIZE=5>Sexo: </FONT>
+                            <FONT SIZE="3" color="#616161"> Macho</FONT><br>
+                            <FONT SIZE=5>Descripción: </FONT>
+                            <FONT SIZE="3" color="#616161"> Este carnal tiene 3 bolas</FONT><br>
+                            <FONT SIZE=5>Beneficiencia: </FONT>
+                            <FONT SIZE="3" color="#616161"><a href=""> Asociaion 1</a></FONT><br>
+                        </p>
+                        <div class="ec-stars-wrapper"><!--*Desde aqui comenze a agregar las estrellas.....................stars-->
+                            <p> <FONT SIZE=5>Calificación: </FONT></p>
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            
+
+                        </div>
+                        <div class="star-rating">
+                            <p> <FONT SIZE=5>Califica: </FONT></p>
+                            <a href="#">&#9733;</a>
+                            <a href="#">&#9733;</a>
+                            <a href="#">&#9733;</a>
+                            <a href="#">&#9733;</a>
+                            <a href="#">&#9733;</a>
+                        </div>
+                        <noscript>Necesitas tener habilitado javascript para poder votar</noscript>
+                        <style>
+                            .star-rating {
+                                text-decoration: none;
+                                display: inline-block;
+                            }
+                            .star-rating a {
+                              float: right;
+                              color: #95a5a6; /* gris (normal) */
+                              font-size: 32px;
+                              font-size: 2rem;
+
+                            }
+                              .star-rating a:hover {
+                                color: #f39c12; /* amarillo (seleccionado) */
+                              }
+                              .star-rating a:hover ~ a {
+                                color: #f39c12; /* amarillo (seleccionado) */
+                              }
+                                                        .ec-stars-wrapper {
+                                /* Espacio entre los inline-block (los hijos, los `a`) 
+                                font-size: 0;
+                                /* Podríamos quitarlo, 
+                                    pero de esta manera (siempre que no le demos padding), 
+                                    sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+                                    también se esté haciendo hover a alguna estrella */
+                                display: inline-block;
+                            }
+                            .ec-stars-wrapper a {
+                                text-decoration: none;
+                                display: inline-block;
+                                /* Volver a dar tamaño al texto */
+                                font-size: 32px;
+                                font-size: 2rem;
+                                
+                                color: #95a5a6;
+                            }
+
+                            .ec-stars-wrapper:hover a {
+                                color: rgb(39, 130, 228);
+                            }
+                            /*
+                             * El selector de hijo, es necesario para aumentar la especifidad
+                             */
+                            .ec-stars-wrapper > a:hover ~ a {
+                                color: #888;
+                            }
+
+                        </style><!--Aqui termina la codificacion de las estrellas ...................... .............stars-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var f = new Date();
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.datepicker');
+                var instances = M.Datepicker.init(elems, {
+                    showMonthAfterYear: true,
+                    defaultDate: new Date(),
+                    setDefaultDate: true,
+                    autoClose: true,
+                    minDate: new Date(),
+                    showMonthAfterYear: true,
+                    disableWeekends: true,
+                    format: 'yyyy-mm-dd',
+                    showClearBtn: false,
+                    yearRange: 0,
+                    i18n: {
+                        cancel: 'cancelar',
+                        clear: 'limpiar',
+                        done: 'listo',
+                        months: [
+                            'Enero',
+                            'Febrero',
+                            'Marzo',
+                            'Abril',
+                            'Mayo',
+                            'Junio',
+                            'Julio',
+                            'Agosto',
+                            'Septiembre',
+                            'Octubre',
+                            'Noviembre',
+                            'Diciembre'
+                        ],
+                        monthsShort: [
+                            '01',
+                            '02',
+                            '03',
+                            '04',
+                            '05',
+                            '06',
+                            '07',
+                            '08',
+                            '09',
+                            '10',
+                            '11',
+                            '12'
+                        ],
+                        weekdays: [
+                            'Domingo',
+                            'Lunes',
+                            'Martes',
+                            'Miercoles',
+                            'Jueves',
+                            'Viernes',
+                            'Sabado'
+                        ],
+                        weekdaysShort: [
+                            'Dom',
+                            'Lun',
+                            'Mar',
+                            'Mier',
+                            'Jue',
+                            'Vie',
+                            'Sab'
+                        ],
+                        weekdaysAbbrev: ['D', 'L', 'M', 'Mi', 'J', 'V', 'S']
+                    }
+                });
+            });
+
+        </script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.timepicker');
+                var instances = M.Timepicker.init(elems, {
+                    twelveHour: false,
+                    i18n: {
+                        cancel: 'cancelar',
+                        clear: 'limpiar',
+                        done: 'listo'
+                    }
+                });
+            });
+
+        </script>
+<style>
+    .google-maps {
+        position: relative;
+        padding-bottom: 70%;
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
+<div class="col s12 m6">
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60361.094115519656!2d-98.27610158952989!3d18.99466000742092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb87a7ccc7143%3A0x64e09e67c3d6594a!2sLomas+de+Angel%C3%B3polis%2C+Tlaxcalancingo%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1552950561527" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+        <div class="col s12 m6">
+            <br><br><br><br>
+            <h3 align="center"> Datos de la cita</h3>
+
+            <div class="container">
+
+                <form action="https://ardogs.herokuapp.com/GeneraCitaController/index/17" class="col s12 form-group" method="post" accept-charset="utf-8">
+                <div class="row">
+
+                    <div class="input-field col m12 s12">
+                        <input type="text" name="Fecha" value="" id="id_fecha" required="required" class="validate datepicker" title="Fecha de la cita" oninvalid="setCustomValidity('¡Te vamos a estar esperando!, clickea para abrir el calendario ')" oninput="setCustomValidity('')"  onkeypress="return checar_1(event)" />
+<label for="id_fecha">Fecha de la cita (Presioname)</label>
+                    </div>
+
+                    <div class="input-field col m12 s12">
+                        <input type="text" name="Hora" value="16:07" id="id_hora" required="required" class="validate timepicker" title="Hora de la cita" oninvalid="setCustomValidity('¿A que hora te vamos a ver?, clickea para abrir el reloj ')" oninput="setCustomValidity('')"  onkeypress="return checar_1(event)" />
+<label for="id_hora">Hora de la cita, formato 24 hrs (Presioname)</label>
+                    </div>
+
+                    <br>
+
+                    <center>
+                        <button data-target="modal1" class="btn modal-trigger green darken-1">Obtener Cita</button>
+                    </center>
+
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="row">
+                                <div class="col s12 m12">
+
+                                    <center>
+                                        <img width="150" height="150" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png" ALIGN="center">
+                                    </center>
+
+                                    <h4 ALIGN="center">
+                                        <FONT COLOR="red">¡Atención!</FONT>
+                                    </h4>
+                                    <p ALIGN="center">¡Muchas gracias! En cuanto presiones "Enviar" recibiras un correo electronico con un formato el cual deberas presentar el día de la cita. Es importante que lo imprimas porque de lo contrario la beneficiencia a la que asistas no podra brindarte el servicio. De corazon a corazon, ¡Gracias!. Da click en enviar para terminar con el proceso o presiona fuera de la advertencia para regresar a la pantalla anterior.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <center>
+                                <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Enviar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </center>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="page-footer grey darken-4">
+    <div>
+        <div class="row">
+            <div class="col s12 m4 ">
+                <div class="container">
+                    <h3>Sitios de referencia</h3>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col s12 m4">
+
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img img-responsive src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="200px" height="200px">
+                </center>
+            </div>
+            <div class="col s12 m4">
+                <div class="container">
+                    <h3>Social</h3>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/dudOvU/facebook.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/iZv3vU/twitter.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://www.gmail.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/bTzVaU/mail.png" alt="">
+                        </i>
+                    </a>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright BuildingRent. Todos los derechos reservados.
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

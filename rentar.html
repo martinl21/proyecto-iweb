@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        aRDog | Adopta    </title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png">
+
+    <!--Script Dropdown--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                constrainWidth: false
+            });
+        });
+
+    </script>
+
+
+
+   <div class="navbar-fixed z-depth-3">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html" class="brand-logo">
+                        <img class="responsive-img" src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="55px" height="200px">
+                    </a>
+
+                    <a href="" data-target="menu-responsive" class="sidenav-trigger ">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html">Catálogo</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">FAQ</a>
+                        </li>
+
+                                                <li class="tooltipped" data-position="bottom" data-tooltip="Aqui podras ver el estado de la cita con tu nuevo amigo, además podras modificar algunos datos personales">
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/panel.html">
+                                <i class="material-icons left ">pets </i> ¡Bienvenido,
+                                Juan Roberto!
+                                <!-- <i class="material-icons center">arrow_drop_down</i>-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ardogs.herokuapp.com/LoginController/logout" class="grey darken-4 white-text">
+                                Cerrar sesión
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+     <!--Script para el sidenav(menu responsivo)--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+    </script>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html" ALIGN="center" class="grey darken-4 white-text">
+                Inicia sesión
+                <i class="material-icons left">person</i>
+            </a></li>
+        <li class="divider"></li>
+        <li><a href="file:///C:/Users/Family/Desktop/proyecto-iweb/registro.html" class="grey darken-4 white-text">
+                ¡Registrate!
+                <i class="material-icons left">library_books</i>
+            </a></li>
+    </ul>
+
+    <ul class="sidenav blue-grey lighten-5" id="menu-responsive">
+
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://image.ibb.co/eLwhpp/portada.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="https://image.ibb.co/dRiGep/Male_User_96px.png"></a>
+
+                                <a href="https://ardogs.herokuapp.com/PanelController">
+                    <span class="white-text name">
+                        ¡Bienvenido,
+                        Juan Roberto!
+                    </span>
+                </a>
+                    <span class="white-text email">
+                        juanzr_cupe_rojas@hotmail.com                    </span>
+                
+            </div>
+        </li>
+
+
+         <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html"><i class="material-icons">panorama_vertical</i>Inicio</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html"><i class="material-icons">pets</i>Catálogo</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html"><i class="material-icons">contact_mail</i>Nosotros</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html"><i class="material-icons">contact_mail</i>Contacto</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">question_answer</i>FAQ</a>
+        </li>
+
+                <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">
+                Informacion personal
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ardogs.herokuapp.com/PanelController">
+                <i class="material-icons">assignment_ind</i>
+                Panel de Control
+            </a>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li>
+            <a class="subheader">
+                Salir
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ardogs.herokuapp.com/LoginController/logout">
+                <i class="material-icons">exit_to_app</i>
+                Cerrar Sesión
+            </a>
+        </li>
+
+        
+
+
+
+    </ul>
+
+    <ul id="dropdown_2" class="dropdown-content">
+        <li>
+            <a href="https://ardogs.herokuapp.com/LoginController">Iniciar sesión</a>
+        </li>
+    </ul>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems);
+        });
+
+    </script>
+
+</head>
+
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://ardogs.herokuapp.com/Estilos/js/philter/philter.min.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+        });
+</script>
+
+<style type="text/css">
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:before,
+    [type="radio"].with-gap:checked+span:after {
+        border: 2px solid #43a047;
+    }
+
+    [type="radio"]:checked+span:after,
+    [type="radio"].with-gap:checked+span:after {
+        background-color: #43a047;
+    }
+</style>
+
+
+<div class="parallax-container">
+    <div class="parallax slider">
+        <img data-philter-vintage="1" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-729875.jpg">
+        <ul class="slides"></ul>
+    </div>
+</div>
+
+
+<center>
+    <img src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" width="200px" height="200px" ALIGN="center">
+</center>
+
+
+<h3 ALIGN="center">Y estos... son nuestros muchachos</h3>
+<br><br>
+<div class="container">
+    <p ALIGN="center">¡Tu momento ha llegado! Aqui podras encontrar a ese amigo que tanto has buscado, es importante que estes aqui porque realmente buscas a alguien compartir, recuerda que la vida de ellos no es un juego</p>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+    <form action="https://ardogs.herokuapp.com/AdoptaController" class="col s12 form-group" method="post" accept-charset="utf-8">
+    <div class="row">
+
+            <div class="col m6 s12 right">
+                <div class="col m3 s6"></div> 
+                <div class="input-field col m6 s12">  
+                <select name="Filtro" id="filtro_id" class="validate" required>
+                        <option selected value="1">Todos</option>
+                        <option  value="2">Por Nombre</option>
+                        <option  value="3">Por Beneficencia</option>
+                        <option  value="4">No adoptados</option>
+                        <option  value="5">Adoptados</option>
+                        <option  value="6">En Proceso de Adopción</option>
+                        <option  value="7">Por género</option>
+                        <option  value="8">Por edad</option>
+                        <option  value="9">Por raza</option>
+                        <option  value="10">Agregados Recientemente</option>
+                        <option  value="11">Más Antiguos</option>
+                </select>
+                <label>Filtro</label>
+                
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var elems = document.querySelectorAll('select');
+                        var instances = M.FormSelect.init(elems);
+                      });
+                </script>
+                <br>
+                
+                    <button name="action" type="submit" class="btn waves-effect waves-light btn pulse green darken-1 col m3 s6 right" >Filtrar</button>
+
+                <!--a class="waves-effect waves-light btn pulse green darken-1 col m3 s6 right">Filtrar</a-->
+        </div>
+    </div>
+    
+
+
+
+</form></div>
+<br><br>
+
+
+<div class="container">
+    <div class="row">
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-731980.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Tyzon<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Asociaion 1                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Tyzon</span>
+                            
+                                <br>Raza: Pug<br>Edad: 2 años<br>Sexo: Macho<br>Descripcion: Este carnal tiene 3 bolas                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-732988.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">perro<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Juxxis                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de perro</span>
+                            
+                                <br>Raza: Pug<br>Edad: 5 meses<br>Sexo: Macho<br>Descripcion: ES bien perro                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-732991.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Jack1<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Asociaion 1                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Jack1</span>
+                            
+                                <br>Raza: Maltez<br>Edad: 4 meses<br>Sexo: Hembra<br>Descripcion: Es un locochon1                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-733171.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Jack2<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Asociaion 1                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Jack2</span>
+                            
+                                <br>Raza: Maltez<br>Edad: 1 mes<br>Sexo: Macho<br>Descripcion: Es un locochon2                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-734422.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Jack3<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Asociaion 1                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Jack3</span>
+                            
+                                <br>Raza: Maltez<br>Edad: 7 meses<br>Sexo: Macho<br>Descripcion: Es un locochon3                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-735244.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Jack4<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Juxxis                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Jack4</span>
+                            
+                                <br>Raza: Pug<br>Edad: 4 meses<br>Sexo: Macho<br>Descripcion: Es un locochon5                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-732990.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Jack6<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <a href=https://ardogs.herokuapp.com/GeneraCitaController/index/13>Me gustaría conocerlo</a>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Juxxis                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Jack6</span>
+                            
+                                <br>Raza: Chihuahua<br>Edad: 1 mes<br>Sexo: Macho<br>Descripcion: El macho 1                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-739833.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Jack7<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Juxxis                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Jack7</span>
+                            
+                                <br>Raza: Maltez<br>Edad: 1 mes<br>Sexo: Macho<br>Descripcion: El macho 2                        </font>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <div class="col m4 s12">
+                <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img  class="activator responsive-img"  data-philter-vintage="1" data-philter-grayscale="0 100" src=https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-737281.jpg>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Julión<i class="material-icons right">more_vert</i></span>
+                        <p align="right">
+                            
+                            <FONT SIZE=3 COLOR='#FFC300'>EN PROCESO DE ADOPCIÓN</FONT>                        </p>
+
+                        <!--br-->
+                        <p align="right">
+                            Centro de Adopción: Asociaion 1                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <font size="3" face="Bahnschrift Light" >
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Acerca de Julión</span>
+                            
+                                <br>Raza: Chihuahua<br>Edad: 7 meses<br>Sexo: Macho<br>Descripcion: Cherry Cherry Lady                        </font>
+                    </div>
+                </div>
+            </div>
+
+                
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<center>
+            <ul class="pagination"><li class="active"><a href="#!">1</a></li><li class="waves-effect"><a href="https://ardogs.herokuapp.com/AdoptaController/index/2" data-ci-pagination-page="2">2</a></li><li class="waves-effect"><a href="https://ardogs.herokuapp.com/AdoptaController/index/3" data-ci-pagination-page="3">3</a></li><li class="waves-effect"><a href="https://ardogs.herokuapp.com/AdoptaController/index/2" data-ci-pagination-page="2" rel="next"><i class="material-icons">chevron_right</i></a></li></ul>    </center>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<script>
+    new Philter({
+        transitionTime: 0.9, // hover transition time
+
+    });
+
+</script>
+<footer class="page-footer grey darken-4">
+    <div>
+        <div class="row">
+            <div class="col s12 m4 ">
+                <div class="container">
+                    <h3>Sitios de referencia</h3>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col s12 m4">
+
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img img-responsive src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="200px" height="200px">
+                </center>
+            </div>
+            <div class="col s12 m4">
+                <div class="container">
+                    <h3>Social</h3>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/dudOvU/facebook.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/iZv3vU/twitter.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://www.gmail.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/bTzVaU/mail.png" alt="">
+                        </i>
+                    </a>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright BuildingRent. Todos los derechos reservados.
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

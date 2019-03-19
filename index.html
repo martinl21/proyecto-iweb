@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        BuildingRent | Inicio    </title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png">
+
+    <!--Script Dropdown--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                constrainWidth: false
+            });
+        });
+
+    </script>
+
+
+
+    <div class="navbar-fixed z-depth-3">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html" class="brand-logo">
+                        <img class="responsive-img" src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="55px" height="200px">
+                    </a>
+
+                    <a href="" data-target="menu-responsive" class="sidenav-trigger ">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html">Catálogo</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">FAQ</a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+
+                                <i class="material-icons ">account_circle
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!--Script para el sidenav(menu responsivo)--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+    </script>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html" ALIGN="center" class="grey darken-4 white-text">
+                Inicia sesión
+                <i class="material-icons left">person</i>
+            </a></li>
+        <li class="divider"></li>
+        <li><a href="file:///C:/Users/Family/Desktop/proyecto-iweb/registro.html" class="grey darken-4 white-text">
+                ¡Registrate!
+                <i class="material-icons left">library_books</i>
+            </a></li>
+    </ul>
+
+    <ul class="sidenav blue-grey lighten-5" id="menu-responsive">
+
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://image.ibb.co/eLwhpp/portada.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="https://image.ibb.co/dRiGep/Male_User_96px.png"></a>
+
+                
+                <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html"><span class="white-text name">Inicia Sesión</span></a>
+                <br>
+                
+            </div>
+        </li>
+
+
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html"><i class="material-icons">panorama_vertical</i>Inicio</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html"><i class="material-icons">pets</i>Catálogo</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html"><i class="material-icons">contact_mail</i>Nosotros</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html"><i class="material-icons">contact_mail</i>Contacto</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">question_answer</i>FAQ</a>
+        </li>
+
+                <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/registro.html"><i class="material-icons">create</i>Registrarse</a>
+        </li>
+        
+
+
+
+    </ul>
+
+    <ul id="dropdown_2" class="dropdown-content">
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html">Iniciar sesión</a>
+        </li>
+    </ul>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems);
+        });
+
+    </script>
+
+</head>
+
+<body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            indicators: false,
+            interval: 3000
+
+        });
+    });
+
+</script>
+
+
+<div class="parallax-container">
+    <div class="parallax slider" , "slider">
+        <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-733767.jpg">
+        <ul class="slides">
+            <li>
+                <div class="caption center-align">
+                    <h3>BuildingRent en todos lados!</h3>
+                    <h5 class="light grey-text text-lighten-3">Comprende</h5>
+                </div>
+            </li>
+
+            <li>
+                <div class="caption left-align">
+                    <h3>BuildingRent</h3>
+                    <h5 class="light grey-text text-lighten-3">Rentar</h5>
+                </div>
+            </li>
+
+            <li>
+                <div class="caption right-align">
+                    <h3>Más BuildingRent!</h3>
+                    <h5 class="light grey-text text-lighten-3">Nostros</h5>
+                </div>
+            </li>
+
+            <li>
+                <div class="caption center-align">
+                    <h3>BuildingRent en la web!</h3>
+                    <h5 class="light grey-text text-lighten-3">Ayuda</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="slider">
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+
+</script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <center>
+                <img class="responsive-img" src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" width="200px" height="200px" ALIGN="center">
+            </center>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h1 ALIGN="center">¿Quienes somos?</h1>
+            <br>
+            <br>
+            <p ALIGN="center">Somos una organización sin fines de lucro, que busca disminuir los índices de perros callejeros,
+              así como los índices de sacrificios, además de fomentar la empatía, la solidaridad y el amor en las familias, a
+              través del sistema de recepción de citas a través de internet para conocer a un perro de una organización afiliada
+              para que puedas adoptarlo. De esta manera creamos una manera más rápida y fácil de vincular perros callejeros con
+              familias capaces de darle el amor y el cuidado que merecen.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+ <div class="slider">  
+    <ul class="slides">  
+    <li>  
+      <img img-responsive src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-124645.jpg">  
+      <!-- random image -->  
+      <div class="caption center-align">  
+        <h3>¿Te interesa este lugar?</h3>  
+        <h5 class="light grey-text text-lighten-3">No esperes más visita nuestro catálogo de inmuebles</h5>  
+        <a class="btn waves-effect waves-light  grey darken-4">Ver más..</a>
+      </div>  
+    </li>  
+    <li>  
+      <img img-responsive src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-748858.jpg">  
+      <!-- random image -->  
+      <div class="caption center-align">  
+        <h3>¿Te interesa este lugar?</h3>  
+        <h5 class="light grey-text text-lighten-3">No esperes más visita nuestro catálogo de inmuebles</h5>  
+        <a class="btn waves-effect waves-light  grey darken-4">Ver más..</a>
+      </div>  
+    </li>  
+    <li>  
+      <img img-responsive src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-739360.jpg">  
+      <!-- random image -->  
+      <<div class="caption center-align">  
+        <h3>¿Te interesa este lugar?</h3>  
+        <h5 class="light grey-text text-lighten-3">No esperes más visita nuestro catálogo de inmuebles</h5>  
+        <a class="btn waves-effect waves-light  grey darken-4">Ver más..</a> 
+</div>  
+</li>  
+<li>  
+  <img img-responsive src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-745277.jpg">  
+  <!-- random image -->  
+  <d<div class="caption center-align">  
+    <h3>¿Te interesa este lugar?</h3>  
+        <h5 class="light grey-text text-lighten-3">No esperes más visita nuestro catálogo de inmuebles</h5>  
+        <a class="btn waves-effect waves-light  grey darken-4">Ver más..</a>  
+    </div>  
+</li>  
+</ul>  
+</div>  
+<script> $(document).ready(function() {  
+  $(".slider").slider({ full_width: true }); 
+  $(".slider").slider({ duration: 100 });  
+});  
+</script>  
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            
+        </div>
+    </div>
+</div>
+<footer class="page-footer grey darken-4">
+    <div>
+        <div class="row">
+            <div class="col s12 m4 ">
+                <div class="container">
+                    <h3>Sitios de referencia</h3>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col s12 m4">
+
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img img-responsive src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="200px" height="200px">
+                </center>
+            </div>
+            <div class="col s12 m4">
+                <div class="container">
+                    <h3>Social</h3>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/dudOvU/facebook.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/iZv3vU/twitter.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://www.gmail.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/bTzVaU/mail.png" alt="">
+                        </i>
+                    </a>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright BuildingRent. Todos los derechos reservados.
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

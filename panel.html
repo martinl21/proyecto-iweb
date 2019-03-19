@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        aRDog | Panel de Control    </title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png">
+
+    <!--Script Dropdown--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                constrainWidth: false
+            });
+        });
+
+    </script>
+
+
+
+     <div class="navbar-fixed z-depth-3">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html" class="brand-logo">
+                        <img class="responsive-img" src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="55px" height="200px">
+                    </a>
+
+                    <a href="" data-target="menu-responsive" class="sidenav-trigger ">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html">Catálogo</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">FAQ</a>
+                        </li>
+                                                <li class="tooltipped" data-position="bottom" data-tooltip="Aqui podras ver el estado de la cita con tu nuevo amigo, además podras modificar algunos datos personales">
+                            <a href="https://ardogs.herokuapp.com/PanelController">
+                                <i class="material-icons left ">pets </i> ¡Bienvenido,
+                                Juan Roberto!
+                                <!-- <i class="material-icons center">arrow_drop_down</i>-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ardogs.herokuapp.com/LoginController/logout" class="grey darken-4 white-text">
+                                Cerrar sesión
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!--Script para el sidenav(menu responsivo)--->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+    </script>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="https://ardogs.herokuapp.com/LoginController" ALIGN="center" class="grey darken-4 white-text">
+                Inicia sesión
+                <i class="material-icons left">person</i>
+            </a></li>
+        <li class="divider"></li>
+        <li><a href="https://ardogs.herokuapp.com/RegistroController" class="grey darken-4 white-text">
+                ¡Registrate!
+                <i class="material-icons left">library_books</i>
+            </a></li>
+    </ul>
+
+    <ul class="sidenav blue-grey lighten-5" id="menu-responsive">
+
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://image.ibb.co/eLwhpp/portada.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="https://image.ibb.co/dRiGep/Male_User_96px.png"></a>
+
+                                <a href="https://ardogs.herokuapp.com/PanelController">
+                    <span class="white-text name">
+                        ¡Bienvenido,
+                        Juan Roberto!
+                    </span>
+                </a>
+                    <span class="white-text email">
+                        juanzr_cupe_rojas@hotmail.com                    </span>
+                
+            </div>
+        </li>
+
+
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/index.html"><i class="material-icons">panorama_vertical</i>Inicio</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/login.html"><i class="material-icons">pets</i>Catálogo</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/nosotros.html"><i class="material-icons">contact_mail</i>Nosotros</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/contacto.html"><i class="material-icons">contact_mail</i>Contacto</a>
+        </li>
+        <li>
+            <a href="file:///C:/Users/Family/Desktop/proyecto-iweb/faqs.html">question_answer</i>FAQ</a>
+        </li>
+
+                <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">
+                Informacion personal
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ardogs.herokuapp.com/PanelController">
+                <i class="material-icons">assignment_ind</i>
+                Panel de Control
+            </a>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li>
+            <a class="subheader">
+                Salir
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ardogs.herokuapp.com/LoginController/logout">
+                <i class="material-icons">exit_to_app</i>
+                Cerrar Sesión
+            </a>
+        </li>
+
+        
+
+
+
+    </ul>
+
+    <ul id="dropdown_2" class="dropdown-content">
+        <li>
+            <a href="https://ardogs.herokuapp.com/LoginController">Iniciar sesión</a>
+        </li>
+    </ul>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems);
+        });
+
+    </script>
+
+</head>
+
+<body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+    });
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems);
+    });
+
+</script>
+
+<!--Script's que verifican la entrada del usuario-->
+<script>
+    function checar(e) {
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla == 8) {
+            return false;
+        }
+
+        // Patron de entrada, en este caso solo acepta numeros y letras
+        patron = /[A-Za-z ]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
+</script>
+
+
+
+<script>
+    function checar_1(e_1) {
+        tecla = (document.all) ? e_1.keyCode : e_1.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla == 8) {
+            return false;
+        }
+        // Patron de entrada, en este caso solo acepta numeros y letras
+        patron = /[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
+</script>
+
+<script>
+    function checar_2(e_2) {
+        tecla = (document.all) ? e_2.keyCode : e_2.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla == 8) {
+            return true;
+        }
+
+        // Patron de entrada, en este caso solo acepta numeros y letras
+        patron = /[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
+</script>
+
+<script>
+    function checar_3(e_3) {
+        tecla = (document.all) ? e_3.keyCode : e_3.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla == 8) {
+            return true;
+        }
+
+        // Patron de entrada, en este caso solo acepta numeros y letras
+        patron = /[0-9A-Za-z #/., ]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+</script>
+
+<div class="parallax-container">
+    <div class="parallax slider">
+        <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-686839.jpg">
+        <ul class="slides">
+    </div>
+</div>
+
+
+
+
+<center>
+    <img width="200" height="200" class="responsive-img" src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" ALIGN="center">
+</center>
+
+
+
+
+<h3 ALIGN="center">Panel de Control</h3>
+<br>
+
+<p ALIGN="center">Controla tus citas, modifica tu informacion personal y de inicio de sesión.</p>
+<br>
+
+<script>
+    function vistActiva(tipo) {
+        $('#Activa_Id').val(tipo);
+    }
+
+</script>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col s12">
+
+            <ul class="collapsible popout">
+                <li  onClick="vistActiva('1')">
+                    <div class="collapsible-header">
+                        <h5> <i class="material-icons">assignment</i>Visualizar Citas</h5>
+                    </div>
+                    <div class="collapsible-body">
+                        <p ALIGN="center">Aqui podras ver todas las citas que puedas tener.</p>
+                        <br>
+                        <table class="responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Cita</th>
+                                    <th>Número perro</th>
+                                    <th>Perro</th>
+                                    <th>Centro de Adopción</th>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Estado</th>
+                                    <th>Acción</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                
+                                <tr>
+                                    <td>
+                                        111                                    </td>
+                                    <td>
+                                        20                                    </td>
+                                    <td>
+                                        Jack2                                    </td>
+                                    <td>
+                                        Asociaion 1                                    </td>
+                                    <td>
+                                        2018-11-09                                    </td>
+                                    <td>
+                                        11:31:00                                    </td>
+                                    <td>
+                                        <FONT COLOR="#c0ca33">En proceso</FONT>                                    </td>
+                                    <td>
+                                        
+                                        <a data-target="modal1" class="btn-flat modal-trigger waves-effect waves-red">
+                                            <FONT COLOR="red">Cancelar cita</FONT>
+                                        </a>
+
+
+                                        <div id="modal1" class="modal">
+                                            <div class="modal-content">
+                                                <div class="row">
+                                                    <div class="col s12 m12">
+
+                                                        <center>
+                                                            <img width="150" height="150" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png" ALIGN="center">
+                                                        </center>
+
+                                                        <h4 ALIGN="center">
+                                                            <FONT COLOR="red">¡Atención!</FONT>
+                                                        </h4>
+                                                        <p ALIGN="justify">Esta a punto de cancelar una de sus citas. Al precionar CONTINUAR, no podrá restablecerla por lo que tendrá que volver a realizar el proceso de hacer cita si asi lo desea. De clic fuera de la ventana para omitir.</p>
+
+
+                                                        <br>
+                                                        <a data-target="modal1" class="btn-flat modal-trigger waves-effect waves-red"></a>
+
+
+                                                            <center>
+                                                                <a href="https://ardogs.herokuapp.com/PanelController/cancelarCitaUser/111" class="btn-flat modal-trigger waves-effect waves-red">
+                                                                <font COLOR="red" SIZE=4>
+                                                                    Continuar
+                                                                </font>
+                                                            </a>
+                                                            </center>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </td>
+
+
+                                </tr>
+                                                            </tbody>
+                        </table>
+                    </div>
+                </li>
+
+                <li  onClick="vistActiva('2')">
+                    <div class="collapsible-header">
+                        <h5>
+                            <i class="material-icons">assignment_ind</i>
+                            Información Personal
+                            <FONT SIZE=3 COLOR="#5AE80E">
+                                                            </FONT>
+                            <FONT SIZE=3 COLOR="#D55F02">
+                                                            </FONT>
+
+                        </h5>
+                    </div>
+                    <div class="collapsible-body">
+                        <p ALIGN="center">Consulta tu informción personal y modificala si te equivocaste durante el proceso de registro.<br></p>
+                        <p ALIGN="center">
+                            <FONT COLOR="e53935" ALIGN="center">¡NOTA! No podras modificar toda tu información</FONT>
+                        </p>
+
+                        <br><br>
+
+                        <div class="row">
+                            <form action="https://ardogs.herokuapp.com/PanelController" class="col s12 form-group" method="post" accept-charset="utf-8">
+                            <div class="row">
+                                <!-- Campo invisible para la pestaña activa-->
+                                <input type="text" name="Activa" value="2" id="Activa_Id" required="required" class="validate" style="display:none"  />
+                                <!--Campo apellido paterno-->
+                                <div class="input-field col m4 s12">
+                                    <input type="text" name="Ap_Paterno" value="Alonso" id="id_pat_U" required="required" class="validate" title="Apellido Paterno" oninvalid="setCustomValidity('Deberas ingresar tu Apellido Paterno')" oninput="setCustomValidity('')"  onkeypress="return checar(event)" />
+<label for="id_pat_U">Apellido Paterno</label>                                </div>
+                                <!--Campo apellido materno-->
+                                <div class="input-field col m4 s12">
+                                    <input type="text" name="Ap_Materno" value="Rojas" id="id_mat_U" required="required" class="validate" title="Apellido Materno" oninvalid="setCustomValidity('Deberas ingresar tu Apellido Materno')" oninput="setCustomValidity('')"  onkeypress="return checar(event)" />
+<label for="materno">Apellido Materno</label>                                </div>
+
+                                <div class="input-field col m4 s12">
+                                    <input type="text" name="Nombre" value="Juan Roberto" id="id_nom_U" required="required" class="validate" title="Nombre(s)" oninvalid="setCustomValidity('Deberas ingresar tu Nombre')" oninput="setCustomValidity('')"  onkeypress="return checar(event)" />
+<label for="id_nom_U">Nombre(s)</label>                                </div>
+                            </div>
+                            <!--Script para abrir el calendario-->
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    var elems = document.querySelectorAll('.datepicker');
+                                    var instances = M.Datepicker.init(elems, {
+
+                                        showMonthAfterYear: true,
+                                        //defaultDate: new Date('1997-06-10'),
+                                        //setDefaultDate: true,
+                                        autoClose: true,
+                                        format: 'yyyy-mm-dd',
+                                        showClearBtn: false,
+                                        yearRange: 100,
+                                        i18n: {
+                                            cancel: 'cancelar',
+                                            clear: 'limpiar',
+                                            done: 'listo',
+                                            months: [
+                                                'Enero',
+                                                'Febrero',
+                                                'Marzo',
+                                                'Abril',
+                                                'Mayo',
+                                                'Junio',
+                                                'Julio',
+                                                'Agosto',
+                                                'Septiembre',
+                                                'Octubre',
+                                                'Noviembre',
+                                                'Diciembre'
+                                            ],
+                                            monthsShort: [
+                                                '01',
+                                                '02',
+                                                '03',
+                                                '04',
+                                                '05',
+                                                '06',
+                                                '07',
+                                                '08',
+                                                '09',
+                                                '10',
+                                                '11',
+                                                '12'
+                                            ],
+                                            weekdays: [
+                                                'Domingo',
+                                                'Lunes',
+                                                'Martes',
+                                                'Miercoles',
+                                                'Jueves',
+                                                'Viernes',
+                                                'Sabado'
+                                            ],
+                                            weekdaysShort: [
+                                                'Dom',
+                                                'Lun',
+                                                'Mar',
+                                                'Mier',
+                                                'Jue',
+                                                'Vie',
+                                                'Sab'
+                                            ],
+                                            weekdaysAbbrev: ['D', 'L', 'M', 'Mi', 'J', 'V', 'S']
+                                        }
+                                    });
+                                });
+
+                            </script>
+                            <div class="row">
+                                <div class="input-field col m6 s12">
+                                    <input type="text" name="Fecha_Nacimiento" value="1997-08-05" id="id_fechaN_U" required="required" class="validate datepicker" title="Fecha de nacimiento" oninvalid="setCustomValidity('¡Nos gustaria saber cuando cumples años!, clickea para abrir el calendario ')" oninput="setCustomValidity('')"  onkeypress="return checar_1(event)" />
+<label for="id_fechaN_U">Fecha de nacimiento(Presioname)</label>
+                                </div>
+
+                                <div class="input-field col m6 s12">
+
+                                    <input type="text" name="Telefono" value="2228338573" id="id_tel_U" required="required" class="validate" pattern="[0-9]{10}" title="Telefono" oninvalid="setCustomValidity('Es solo un medio de comunicación')" oninput="setCustomValidity('')"  onkeypress="return checar_2(event)" />
+<label for="id_tel_U">Telefono (LADA)1 234 567</label>                                </div>
+
+                            </div>
+
+                            <center>
+                                <div class="preloader-wrapper big active" id="loading">
+                                    <div class="spinner-layer spinner-blue">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spinner-layer spinner-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spinner-layer spinner-yellow">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spinner-layer spinner-green">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+
+
+
+                            <br><br>
+                            <div class="row">
+
+                                <div class="col s12 m12" ALIGN="center">
+
+                                    <button name="action" type="submit" class="btn waves-effect waves-light grey darken-4" >GUARDAR CAMBIOS</button>
+                                </div>
+
+
+                            </div>
+                            </form>                        </div>
+
+
+
+                    </div>
+                </li>
+                <li  onClick="vistActiva('3')">
+                    <div class="collapsible-header">
+                        <h5>
+                            <i class="material-icons">security</i>
+                            Seguridad e inicio de Sesión
+                            <FONT SIZE=3 COLOR="#5AE80E">
+                                                            </FONT>
+                            <FONT SIZE=3 COLOR="#D55F02">
+                                                            </FONT>
+                        </h5>
+                    </div>
+                    <div class="collapsible-body">
+
+                        <p ALIGN="center">En esta sección podras actualizar tu contraseña, solo necesitas tu vieja contraseña y una nueva.</p>
+                        <div class="row">
+                            <form action="https://ardogs.herokuapp.com/PanelController" class="col s12 form-group" method="post" accept-charset="utf-8">
+
+                            <div class="row">
+                                <!-- Campo invisible para la pestaña activa-->
+                                <input type="text" name="Activa" value="3" id="Activa_Id" required="required" class="validate" style="display:none"  />
+
+                                <div class="col m4 s0"></div>
+                                <div class="input-field col m4 s12" style="text-align: right;height:10px">
+                                    <!-- Campo para la contraseña-->
+                                    <input type="password" name="PasswdActual" value="" id="pass_id_U0" class="validate form-control" required="required" oninvalid="setCustomValidity('Es para estar seguros')" oninput="setCustomValidity('')"  />
+<label for="pass_id_U0">Contraseña Actual</label>
+                                </div>
+                                <div class="col m4 s0"></div>
+                            </div>
+
+                            
+                            <div class="row">
+                                <div class="col m4 s0"></div>
+                                <div class="input-field col m4 s12" style="text-align: right;height:20px">
+                                    <input type="password" name="Passwd" value="" id="pass_id_U1" class="validate form-control" required="required" oninvalid="setCustomValidity('Es para estar seguros')" oninput="setCustomValidity('')"  />
+<label for="pass_id_U1">Contraseña Nueva</label>
+                                </div>
+                                <div class="col m4 s0"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col m4 s0"></div>
+                                <div class="input-field col m4 s12" style="text-align: right;height:30px">
+                                    <input type="password" name="Passwd2" value="" id="pass_id_U2" class="validate form-control" required="1" oninvalid="setCustomValidity('Solo escribela otra vez')" oninput="setCustomValidity('')"  />
+<label for="pass_id_U2">Confirma tu contraseña</label>                                </div>
+                                <div class="col m4 s0"></div>
+                            </div>
+
+                            <!--Script's contraseñas-->
+                            <script>
+                                var password_0 = document.getElementById("pass_id_U1"),
+                                    confirm_password_0 = document.getElementById("pass_id_U2");
+
+                                function validatePassword_0() {
+
+                                    if (password_0.value != confirm_password_0.value) {
+                                        confirm_password_0.setCustomValidity("Las contraseñas deben coincidir");
+                                    } else {
+                                        confirm_password_0.setCustomValidity('');
+                                    }
+                                }
+                                password_0.onchange = validatePassword_0;
+                                confirm_password_0.onkeyup = validatePassword_0;
+
+                            </script>
+                            <script>
+                                var password_1 = document.getElementById("pass_id_U1"),
+                                    confirm_password_1 = document.getElementById("pass_id_U2");
+
+                                function validatePassword_1() {
+
+                                    if (password_1.value.length >= 8) {
+                                        password_1.setCustomValidity('');
+                                    } else if (password_1.value.length < 8) {
+                                        password_1.setCustomValidity("Las contraseña debe ser mayor a 8 caracteres");
+                                    }
+                                }
+                                password_1.onchange = validatePassword_1;
+                                confirm_password_1.onchange = validatePassword_1;
+
+                            </script>
+                            <br>
+                            <br>
+
+                            <center>
+                                <div class="preloader-wrapper big active" id="loading_1">
+                                    <div class="spinner-layer spinner-blue">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spinner-layer spinner-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spinner-layer spinner-yellow">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spinner-layer spinner-green">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+
+                            <div class="row">
+
+                                <div class="col s12 m12" ALIGN="center">
+
+                                    <button name="action" type="submit" class="btn waves-effect waves-light grey darken-4" >GUARDAR CAMBIOS</button>
+                                </div>
+
+                            </div>
+                            </form>                        </div>
+
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#loading').hide();
+        $('form').submit(function() {
+            $('#loading').show();
+        });
+    });
+
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#loading_1').hide();
+        $('form').submit(function() {
+            $('#loading_1').show();
+        });
+    });
+
+</script>
+<footer class="page-footer grey darken-4">
+    <div>
+        <div class="row">
+            <div class="col s12 m4 ">
+                <div class="container">
+                    <h3>Sitios de referencia</h3>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col s12 m4">
+
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img img-responsive src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-5-4/66/2-512.png" alt="" width="200px" height="200px">
+                </center>
+            </div>
+            <div class="col s12 m4">
+                <div class="container">
+                    <h3>Social</h3>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/dudOvU/facebook.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/iZv3vU/twitter.png" alt="">
+                        </i>
+                    </a>
+
+                    <a href="https://www.gmail.com/" target="_blank">
+                        <i>
+                            <img src="https://image.ibb.co/bTzVaU/mail.png" alt="">
+                        </i>
+                    </a>
+                    <p ALIGN="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda asperiores
+                        cum voluptate totam fugiat praesentium impedit adipisci deserunt eligendi. Perspiciatis repellat
+                        voluptatibus doloremque facilis quibusdam tenetur iure harum nostrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright BuildingRent. Todos los derechos reservados.
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
